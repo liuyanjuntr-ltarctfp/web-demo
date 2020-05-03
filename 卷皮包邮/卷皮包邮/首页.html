@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/首页.css" />
+		<title>卷皮九块九包邮</title>
+		<link rel="icon" type="image/x-icon" href="img/Icon.ico" />
+	</head>
+
+	<body>
+		<div class="box1">
+			<div class="l-box">
+				<a href="会员登录.html">登录</a>
+				<a href="免费注册.html"class="a1">免费注册</a>
+				<span class="s-box1">我的订单</span>
+				<span class="s-box2">商家入驻</span>
+				<span class="s-box3">商家中心</span>
+				<span class="s-box4">客户服务</span>
+			</div>
+		</div>
+		<div class="ss">
+			<div class="s1">
+			</div>
+			<div class="s2"></div>
+			<p class="oinput">
+				<input type="text" name="" id="" value="请输入想找的宝贝" title="请输入想找的宝贝" />
+			</p>
+		</div>
+		<div class="sp">
+			<div class="nav">
+				<ul class="f1">
+					<li class="current">首页</li>
+					<a href="#1">品牌折扣</a>
+					<a href="#2">9.9包邮</a>
+					<a href="#3">即将上线</a>
+					<a href="//www.juanpi.com/apps" target="_blank" id="show-qcodes">
+						<em class="icon-normal icon-phone" id="new-phone"></em> 手机版
+					</a>
+				</ul>
+			</div>
+		</div>
+
+		<div class="banner-top">
+			<div class="banner-bottom">
+				<div class="banner-1">
+					<ul class="ul-1">
+						<li class="a1">
+							<a href="#">女装</a>
+						</li>
+						<li class="a2">
+							<a href="#">母婴</a>
+						</li>
+						<li class="a3">
+							<a href="#">居家</a>
+						</li>
+						<li class="a4">
+							<a href="#">文体</a>
+						</li>
+						<li class="a5">
+							<a href="#">数码</a>
+						</li>
+						<li class="a6">
+							<a href="#">内衣</a>
+						</li>
+						<li class="a7">
+							<a href="#">鞋子</a>
+						</li>
+					</ul>
+					<ul class="ul-2">
+						<li class="a1-1">
+							<a href="#">男装</a>
+						</li>
+						<li class="a2-2">
+							<a href="#">箱包</a>
+						</li>
+						<li class="a3-3">
+							<a href="#">美妆</a>
+						</li>
+						<li class="a4-4">
+							<a href="#">家纺</a>
+						</li>
+						<li class="a5-5">
+							<a href="#">美食</a>
+						</li>
+						<li class="a6-6">
+							<a href="#">电器</a>
+						</li>
+						<li class="a7-7">
+							<a href="#">配饰</a>
+						</li>
+					</ul>
+
+				</div>
+			   <div class="carousel">
+			<div id="imagesList" class="imagesList">
+				<ul>
+					<li class="current">
+						<a href=""><img src="img/banner-01.jpg"/></a>
+					</li>
+					<li>
+						<a href=""><img src="img/banner-02.png"/></a>
+					</li>
+					<li>
+						<a href=""><img src="img/banner-03.jpg"/></a>
+					</li>
+				</ul>
+			</div>
+			<div class="btns">
+				<span class="leftBtn" id="carousel_leftBtn"></span>
+				<span class="rightBtn" id="carousel_rightBtn"></span>
+			</div>
+			<div id="circles" class="circles">
+				<ol>
+					<li class="current"></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+		</div>
+			 <div class="banner-2">
+			 	<ul >
+			 		<li class="img-01"><img src="img/r-1.jpg"/></li>
+			 		<li class="img-02"><img src="img/r-3.jpg"/></li>
+			 		<li class="img-03"><img src="img/r-4.jpg"/></li>
+			 		<li class="img-04"><img src="img/r-2.jpg"/></li>
+                    <li class="img-05"><img src="img/r-5.jpg"/></li>
+			 	</ul>
+			 </div>
+		</div>
+			</div>
+		<script type="text/javascript">
+			var carousel_leftBtn=document.getElementById("carousel_leftBtn");
+			var carousel_rightBtn=document.getElementById("carousel_rightBtn");
+			var circlesLis=document.getElementById("circles").getElementsByTagName("li");
+			var imagesList=document.getElementById("imagesList").getElementsByTagName("li");
+			var img_idx=0;
+			carousel_rightBtn.onclick=function(){
+				img_idx++;
+				if (img_idx>2) {
+					img_idx=0;
+				}
+				changePic();
+			}
+			carousel_leftBtn.onclick=function(){
+				img_idx--;
+				if (img_idx<0) {
+					img_idx=2;
+				}
+				changePic();
+			}
+			for(var i=0;i<circlesLis.length;i++){
+				(function(m){
+					circlesLis[m].onmouseover=function(){
+						img_idx=m;
+						changePic();
+					}
+				})(i)
+				
+			}
+			function changePic(){
+				for (var i=0;i<imagesList.length;i++) {
+					imagesList[i].className="";
+				}
+				imagesList[img_idx].className="current";
+				for(var i=0;i<circlesLis.length;i++){
+					circlesLis[i].className="";
+				}
+				circlesLis[img_idx].className="current";
+			}
+		</script>
+        <div class="tody-pp">
+        	<div class="tody-01">
+        		今日品牌
+        		<span>TODAY'S BRAND</span>
+        	</div>
+        	<div class="tody-02">
+        	<a href="#">全部品牌</a>
+        		<!--<img src="img/icon_arrow-new (1).png"/>-->
+        	</div>
+        </div>
+	    <div class="tody-pp-01">
+	    	
+	    </div>
+	</body>
+</html>

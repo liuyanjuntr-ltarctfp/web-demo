@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width:500px;
+				height:400px;
+				border: 1px solid red;
+				margin: 100px;
+				position: relative;
+			}
+			p{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 80px;
+				height:80px;
+				background-color: saddlebrown;
+			}
+		</style>
+	</head>
+	<body>
+	<!--	<div>
+			<p></p>
+		</div>
+		<script type="text/javascript">
+			var oDiv=document.getElementsByTagName("div")[0];
+			var op=document.getElementsByTagName("p")[0];
+			//鼠标按下：
+			op.onmousedown=function  (event) {
+				event=event||window.event;
+				var deltaX=event.clientX-op.offsetLeft;
+				var deltaY=event.clientY-op.offsetTop;
+				oDiv.onmousemove=function(event){
+					event=event||window.event;
+					var x=event.clientX-deltaX;
+					var y=event.clientY-deltaY;
+					if (x<10) {
+						x=0;
+					}
+					if (y<10) {
+						y=0;
+					}
+					if (x>oDiv.clientWidth-op.clientWidth-10) {
+						x=oDiv.clientWidth-op.clientWidth;
+					}
+					if (y>oDiv.clientHeight-op.clientHeight-10) {
+						y=oDiv.clientHeight-op.clientHeight;
+					}
+					op.style.left=x+"px";
+					op.style.top=y+"px";
+				}
+			}
+			document.onmouseup=function(event){
+				oDiv.onmousemove=null;
+			}
+		</script>-->
+			<div>
+			<p></p>
+		</div>
+		<script type="text/javascript">
+			var oDiv=document.getElementsByTagName("div")[0];
+			var op=document.getElementsByTagName("p")[0];
+			//鼠标按下：
+			op.onmousedown=function  (event) {
+				event=event||window.event;
+				var deltaX=event.clientX-op.offsetLeft;
+				var deltaY=event.clientY-op.offsetTop;
+				oDiv.onmousemove=function(event){
+					event=event||window.event;
+					var x=event.clientX-deltaX;
+					var y=event.clientY-deltaY;
+					if (x<10) {
+						x=0;
+					}
+					if (y<10) {
+						y=0;
+					}
+					if (x>oDiv.clientWidth-op.clientWidth-10) {
+						x=oDiv.clientWidth-op.clientWidth;
+					}
+					if (y>oDiv.clientHeight-op.clientHeight-10) {
+						y=oDiv.clientHeight-op.clientHeight;
+					}
+					op.style.left=x+"px";
+					op.style.top=y+"px";
+				}
+			}
+			document.onmouseup=function(event){
+				oDiv.onmousemove=null;
+			}
+		</script>
+	</body>
+</html>

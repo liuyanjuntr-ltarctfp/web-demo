@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.box{
+				width:800px;
+				height: 400PX;
+				border: 3px solid #333;
+				overflow: hidden;
+				position: relative;
+				margin:50px auto;
+			}
+			.content{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width:740px;
+				font-size: 14px;
+				line-height: 150%;
+				padding: 20px;
+			}
+			.content p{margin-bottom: 20px;
+			}
+			.bar{
+				position: absolute;
+				top: 0;
+				right: 0;
+				width:20px;
+				height:400px;
+				background-color: salmon;
+				cursor: default;
+			}
+			.bar b{
+				position: absolute;
+				width: 20px;
+				height: 34px;
+				background-color: teal;
+				cursor: default;
+			}
+		</style>
+	</head>
+	<body>
+<!--		<div class="box"id="box">
+			<div class="bar"id="bar">
+				<b id="barB"></b>
+			</div>
+			<div class="content"id="content">
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var box=document.getElementById("box");
+			var content=document.getElementById("content");
+			var barB=document.getElementById("barB");
+			var rate=box.clientHeight/content.clientHeight;
+			//初始高度：
+			barB.style.height=box.clientHeight*rate+"px";
+			//模拟拖拽：
+			barB.onmousedown=function(event){
+				event=event||window.event;
+				var deltaY=event.clientY-barB.offsetTop;
+				document.onmousemove=function(even){
+					event=event||window.event;
+					//新的Y值：
+					var y=even.clientY-deltaY;
+					if (y<0) {
+						y=0;
+					}else if(y>box.clientHeight-barB.clientHeight){
+						y=box.clientHeight-barB.clientHeight;
+					}
+					barB.style.top=y+"px";
+					content.style.top=-y/rate+"px";
+					return false;
+				}
+			}
+			document.onmouseup=function(event){
+				document.onmousemove=null;
+			}
+		</script>-->
+				<div class="box"id="box">
+			<div class="bar"id="bar">
+				<b id="barB"></b>
+			</div>
+			<div class="content"id="content">
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+				<p>你好娜娜啊搜搜索进行绩效按哦搜和洗洗脚锦绣城案件数据喜怒偶好像开始下降欧式家具次拿下阿斯庥及时性hiUC和</p>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var box=document.getElementById("box");
+			var content=document.getElementById("content");
+			var barB=document.getElementById("barB");
+			var rate=box.clientHeight/content.clientHeight;
+			//初始高度：
+			barB.style.height=box.clientHeight*rate+"px";
+			//模拟拖拽：
+			barB.onmousedown=function(event){
+				event=event||window.event;
+				var deltaY=event.clientY-barB.offsetTop;
+				document.onmousemove=function(even){
+					event=event||window.event;
+					//新的Y值：
+					var y=even.clientY-deltaY;
+					if (y<0) {
+						y=0;
+					}else if(y>box.clientHeight-barB.clientHeight){
+						y=box.clientHeight-barB.clientHeight;
+					}
+					barB.style.top=y+"px";
+					content.style.top=-y/rate+"px";
+					return false;
+				}
+			}
+			document.onmouseup=function(event){
+				document.onmousemove=null;
+			}
+		</script>
+	</body>
+</html>
