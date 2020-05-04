@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*  function fun(name) {
+                            name = name || "王五";
+                            console.log(name);
+                        }
+                        fun();
+                        fun("三毛流浪记");
+                        //默认参数
+                        function fun1(name = "笑话") {
+                            console.log(name);
+                        }
+                        fun1();
+                        fun1("蒙恬");
+                        //剩余参数
+                        function fun2(a, ...reset) {
+                            console.log(a);
+                            console.log(reset);
+                        }
+                        fun2(11);
+                        fun2(110, 553, 443, 44, 57);
+                        fun2(223, 456, 33, 22, 563, 23445, 4564, 457, 78966);*/
+        var arr = ["张三", "李四", "王五", "赵六", "田七"];
+
+        function fun3(a, b, c, d, e) {
+            console.log(a, b, c, d, e);
+        }
+        fun3(arr[0], arr[1], arr[2], arr[3], arr[4]); //1
+        fun3.apply(null, arr); //1
+        fun3.call(null, arr[0], arr[1], arr[2], arr[3], arr[4]);
+
+        fun3(...arr); //参数的映射
+    </script>
+</body>
+
+</html>
